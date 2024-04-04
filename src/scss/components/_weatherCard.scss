@@ -1,0 +1,36 @@
+.card {
+  background-color: #1e213a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  min-width: 135px;
+
+  &__time {
+    margin-bottom: 15px;
+  }
+
+  &__weather {
+    width: 100px;
+  }
+
+  &__temp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    &__max {
+      padding-right: 15px;
+    }
+
+    &__min {
+      padding-left: 15px;
+      color: #a09fb1;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&family=Ubuntu+Mono&display=swap');
+@import './abstract/mixin';
+
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  position: relative;
+
+  &__left {
+    min-width: 450px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+  &__right {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    background-color: #100e1d;
+    color: #e7e7eb;
+
+    &__week {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__highlight {
+      width: 80%;
+    }
+  }
+}
