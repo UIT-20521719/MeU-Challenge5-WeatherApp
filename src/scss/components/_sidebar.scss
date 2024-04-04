@@ -1,3 +1,5 @@
+@use '../abstract/' as *;
+
 .sidebar {
   color: #a09fb1;
   background-color: #1e213a;
@@ -95,6 +97,11 @@
       margin-bottom: 40px;
       width: 40%;
 
+      @include mobile {
+        margin-top: 50px;
+        width: 35%;
+      }
+
       .time {
         display: flex;
         flex-direction: row;
@@ -137,7 +144,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
 
     &__input {
       width: 100%;

@@ -10,6 +10,7 @@ import { Navigation } from '@mui/icons-material';
 function App() {
   const [coords, setCoords] = useState({ lat: 0, lon: 0 });
   const [geoLocation, setGeoLocation] = useState({});
+
   const [units, setUnits] = useState('metric');
   const [tempDegree, setTempDegree] = useState('\u00b0C');
   const [windSpeedUnit, setWindSpeedUnit] = useState('m/s');

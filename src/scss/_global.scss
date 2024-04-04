@@ -1,5 +1,5 @@
+@use './abstract/' as *;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&family=Ubuntu+Mono&display=swap');
-@import './abstract/mixin';
 
 * {
   font-family: 'Raleway', sans-serif;
@@ -15,11 +15,21 @@
   min-height: 100vh;
   position: relative;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__left {
     min-width: 450px;
     height: 100vh;
     position: sticky;
     top: 0;
+
+    @include mobile {
+      position: relative;
+      height: 100%;
+    }
   }
   &__right {
     width: 100%;
