@@ -41,6 +41,10 @@
       background-color: #1e213a;
       padding: 30px;
 
+      @include tablet {
+        width: 70%;
+      }
+
       @include mobile {
         width: 70%;
       }

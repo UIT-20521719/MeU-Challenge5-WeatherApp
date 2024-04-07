@@ -29,7 +29,7 @@ const Sidebar = ({
   const handleSearchOptions = () => {
     const fetchLocation = async () => {
       try {
-        const api = `http://api.openweathermap.org/geo/1.0/direct?q=${searchContent}&limit=5&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
+        const api = `https://api.openweathermap.org/geo/1.0/direct?q=${searchContent}&limit=5&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
         const res = await fetch(api);
         const data = await res.json();
         if (res.ok) {
@@ -69,7 +69,6 @@ const Sidebar = ({
               Search
             </div>
           </div>
-          {/**map search options */}
           {searchOptions.length > 0 &&
             searchOptions.map((option) => {
               return (
